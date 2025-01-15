@@ -7261,6 +7261,12 @@ a.text-dark:hover, a.text-dark:focus {
   line-height: 0.75em;
   vertical-align: -15%; }
 
+.fa-15x {
+  font-size: 1.5em; }
+
+.fa-12x {
+  font-size: 1.2em; }
+
 .fa-2x {
   font-size: 2em; }
 
@@ -10294,6 +10300,7 @@ nav.fill ul li.fill-none a:after {
   margin-bottom: 20px; }
 
 .modal ul.follow-social li {
+  position: relative;
   display: inline-block; }
 
 .modal ul.follow-social li a {
