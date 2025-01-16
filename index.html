@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="shortcut icon" href="assets/images/logo/demo_logo.png" type="image/x-icon">
-    <title>I, YueYuanhao - Welcome to my portfolio | Home</title>
+      <title>I, YueYuanhao - Welcome to my portfolio | Home</title>
 
     <!-- Google fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
@@ -22,13 +22,15 @@
 <header id="site-header" class="fixed-top">
   <div class="container">
     <nav class="navbar navbar-expand-lg navbar-light stroke">
+        <!--      if logo is image enable this   -->
+        <a class="navbar-brand" href="#index.html">
+            <img src="assets/images/logo/logo.gif" alt="Your logo" title="My logo" style="height:45px;" />
+        </a>
+
       <a class="navbar-brand" href="index.html">
         <span>Yuanhao Yue</span>
       </a>
-      <!-- if logo is image enable this   
-        <a class="navbar-brand" href="#index.html">
-            <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
-        </a> -->
+
       <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="fa icon-expand fa-bars"></span>
@@ -85,7 +87,7 @@
 </div>
 
 
-<!-- Domain Modal -->
+<!-- Domain Modal 侧边栏-->
 <div class="modal right fade" id="DomainModal" tabindex="-1" role="dialog" aria-labelledby="DomainModalLabel2">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -95,12 +97,12 @@
 
       <div class="modal-body">
         <div class="modal__content">
-          <a class="navbar-brand"> <span>I, Portfolio </span></a>
-          <!-- if logo is image enable this   
-            <h2 class="logo">
-              <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
-            </h2> -->
-          <p class="mt-md-3 mt-2">I Would Love to make your Ideas real. Contact me and we will discuss your projects!
+          <a class="navbar-brand"> <span>岳远浩</span></a>
+<!--         if logo is image enable this   -->
+<!--            <h2 class="logo">-->
+<!--              <img src="assets/images/logo/logo.gif" alt="Your logo" title="Your logo" style="height:45px;" />-->
+<!--            </h2>-->
+          <p class="mt-md-3 mt-2">最大化我的影响力，让世界因我而不同!
           </p>
 
           <img src="assets/images/banner.png" alt="" class="img-fluid mt-5">
@@ -117,10 +119,24 @@
           </div>
           <div class="widget-social-icons mt-sm-5 mt-4">
             <ul class="follow-social">
-                <li><a href="https://github.com/Yueyuanh" target="_blank"><span class="fa fa-github"></span></a></li>
-                <li><a href="https://space.bilibili.com/568294042?spm_id_from=333.1007.0.0" target="_blank"><span class="icon-bilibili"></span></a></li>
-                <li><a href="https://space.bilibili.com/568294042?spm_id_from=333.1007.0.0" target="_blank"><span class="icon-qq"></span></a></li>
-                <li><a href="https://space.bilibili.com/568294042?spm_id_from=333.1007.0.0" target="_blank"><span class="icon-wechat"></span></a></li>
+                <li><a href="https://github.com/Yueyuanh" target="_blank"><span class="fa-12x fa fa-github"></span></a></li>
+                <li><a href="https://space.bilibili.com/568294042?spm_id_from=333.1007.0.0" target="_blank"><span class="fa-12x icon-bilibili"></span></a></li>
+                <li class="wechat-icon">
+                    <a href="#">
+                        <span class="icon-qq"></span>
+                    </a>
+                    <div class="qr-code">
+                        <img src="assets/images/QR/qq.png" alt="QQ QR Code">
+                    </div>
+                </li>
+                <li class="wechat-icon">
+                    <a href="#">
+                        <span class="icon-wechat"></span>
+                    </a>
+                    <div class="qr-code">
+                        <img src="assets/images/QR/wechat.png" alt="Wechat QR Code">
+                    </div>
+                </li>
             </ul>
           </div>
 
@@ -131,7 +147,8 @@
   </div>
   <!-- //modal-dialog -->
 </div>
-<!-- //Domain modal -->
+
+<!-- 首页 -->
 <!-- banner section -->
 <section id="home" class="w3l-banner pb-5">
     <div class="container pb-md-3">
@@ -154,14 +171,29 @@
                 <li><p>Follow me </p></li>
                 <li><a href="https://github.com/Yueyuanh" target="_blank"><span class="fa-15x fa fa-github"></span></a></li>
                 <li><a href="https://space.bilibili.com/568294042?spm_id_from=333.1007.0.0" target="_blank"><span class="fa-12x icon-bilibili"></span></a></li>
-                <li><a href="https://space.bilibili.com/568294042?spm_id_from=333.1007.0.0" target="_blank"><span class="icon-qq"></span></a></li>
-                <li><a href="https://space.bilibili.com/568294042?spm_id_from=333.1007.0.0" target="_blank"><span class="icon-wechat"></span></a></li>
+                <li class="wechat-icon">
+                    <a href="#">
+                        <span class="icon-qq"></span>
+                    </a>
+                    <div class="qr-code">
+                        <img src="assets/images/QR/qq.png" alt="QQ QR Code">
+                    </div>
+                </li>
+                <li class="wechat-icon">
+                    <a href="#">
+                        <span class="icon-wechat"></span>
+                    </a>
+                    <div class="qr-code">
+                        <img src="assets/images/QR/wechat.png" alt="Wechat QR Code">
+                    </div>
+                </li>
             </ul>
         </div>
     </div>
 </section>
 <!-- //banner section -->
-<!-- home page about section -->
+
+<!--技术栈展示-->
 <section class="w3l-homeblock1" id="about">
     <div class="midd-w3 py-5">
         <div class="container py-lg-5 py-md-3">
@@ -181,9 +213,9 @@
                     </ul>
                     <a href="#url" class="btn btn-style btn-empty p-0">View my all services <span></span></a>
                 </div>
-                <div class="col-lg-6 mt-lg-0 mt-5">
+                <div class="col-lg-6 mt-lg-0 mt-5 d-flex justify-content-center align-items-center">
                     <div class="position-relative">
-                        <img src="assets/images/about.jpg" alt="" class="radius-image img-fluid">
+                        <img src="assets/images/about.png" alt="" class="radius-image img-fluid">
                     </div>
                 </div>
             </div>
@@ -193,7 +225,7 @@
 <!-- //home page about section -->
 
 <!-- 滑动作品展示 -->
-<section class="w3l-portflioblock" id="awards">
+<section class="w3l-portflioblock" id="tech">
   <div class="midd-w3 py-5">
       <div class="container py-lg-4 py-md-3">
           <div class="contact-heading text-center mb-5">
@@ -306,242 +338,7 @@
 </section>
 <!-- 滑动作品展示 -->
 
-<!-- home page about section -->
-<section class="w3l-homeblock3" id="awards">
-    <div class="midd-w3 py-5">
-        <div class="container py-lg-5 py-md-3">
-            <div class="row">
-                <div class="col-lg-6">
-                    <span class="text">My Awards and Achievements </span>
-                    <h3 class="title-big">Professional awards and
-                        honors <span> I’ve reached.</span></h3>
-                    <p class="mt-4">Personal awards. Having O7 Years of Experience that Motivated by the Desire to
-                        achieve Success </p>
-                    <div class="reward-list mt-5">
-                        <div class="reward-item">
-                            <div class="reward-item-photo"><img src="assets/images/banner.png" alt="" class="img-fluid"></div>
-                            <div class="reward-item-detail">
-                                <span class="reward-item-title">Web design awards</span>
-                                <p class="reward-item-descr">For Best UX/UI Design App</p>
-                            </div>
-                        </div>
-                        <div class="reward-item">
-                            <div class="reward-item-photo"><img src="assets/images/skills.png" alt="" class="img-fluid"></div>
-                            <div class="reward-item-detail">
-                                <span class="reward-item-title">Inovative ideas design Awards</span>
-                                <p class="reward-item-descr">For Most Loved Illustration </p>
-                            </div>
-                        </div>
-                        <div class="reward-item">
-                            <div class="reward-item-photo"><img src="assets/images/banner.png" alt="" class="img-fluid"></div>
-                            <div class="reward-item-detail">
-                                <span class="reward-item-title">Creative Design awards</span>
-                                <p class="reward-item-descr">For Best UX/UI Project Design</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 align-self mt-lg-0 mt-md-5 mt-4">
-                    <div class="position-relative px-lg-5 mx-lg-0 mx-md-5 image-padding">
-                        <img src="assets/images/awards.png" alt="" class="radius-image img-fluid">
-                        <div class="position-absolute-images">
-                            <img src="assets/images/award.png" class="img-fluid pos-img" alt="" />
-                            <img src="assets/images/award1.png" class="img-fluid pos-img1" alt="" />
-                            <img src="assets/images/award2.png" class="img-fluid pos-img2" alt="" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- //home page about section -->
-
-<!-- home page about section -->
-<section class="w3l-clients" id="skills">
-    <div class="midd-w3 py-5">
-        <div class="container py-lg-5 py-md-3">
-            <div class="row">
-                <div class="col-lg-6 align-self">
-                    <div class="position-relative px-lg-5">
-                        <img src="assets/images/clients.png" alt="" class="radius-image img-fluid">
-                    </div>
-                </div>
-                <div class="col-lg-6 mt-lg-0 mt-5">
-                    <span class="text">Testimonials</span>
-                    <h3 class="title-big">What my <span>clients think</span> about Me</h3>
-                    <div id="owl-demo1" class="owl-carousel owl-theme mt-4 py-2 mb-4">
-                        <div class="item">
-                            <div class="testimonial-content">
-                                <div class="testimonial">
-                                    <blockquote>
-                                        <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae
-                                            laudantium
-                                            voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
-                                            Dolores molestias adipisci dolor sit amet! by the Desire to achieve Success .</q>
-                                    </blockquote>
-                                    <div class="testi-des">
-                                        <div class="test-img"><img src="assets/images/team1.jpg" class="img-fluid"
-                                                alt="client-img">
-                                        </div>
-                                        <div class="peopl align-self">
-                                            <h3>John wilson</h3>
-                                            <p class="indentity">Seattle, Washington</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimonial-content">
-                                <div class="testimonial">
-                                    <blockquote>
-                                        <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae
-                                            laudantium
-                                            voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
-                                            Dolores molestias adipisci dolor sit amet! by the Desire to achieve Success.</q>
-                                    </blockquote>
-                                    <div class="testi-des">
-                                        <div class="test-img"><img src="assets/images/team2.jpg" class="img-fluid"
-                                                alt="client-img">
-                                        </div>
-                                        <div class="peopl align-self">
-                                            <h3>Julia sakura</h3>
-                                            <p class="indentity">Seattle, Washington</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimonial-content">
-                                <div class="testimonial">
-                                    <blockquote>
-                                        <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae
-                                            laudantium
-                                            voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
-                                            Dolores molestias adipisci dolor sit amet! by the Desire to achieve Success.</q>
-                                    </blockquote>
-                                    <div class="testi-des">
-                                        <div class="test-img"><img src="assets/images/team3.jpg" class="img-fluid"
-                                                alt="client-img">
-                                        </div>
-                                        <div class="peopl align-self">
-                                            <h3>Roy Linderson</h3>
-                                            <p class="indentity">Seattle, Washington</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimonial-content">
-                                <div class="testimonial">
-                                    <blockquote>
-                                        <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae
-                                            laudantium
-                                            voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
-                                            Dolores molestias adipisci dolor sit amet! by the Desire to achieve Success.</q>
-                                    </blockquote>
-                                    <div class="testi-des">
-                                        <div class="test-img"><img src="assets/images/team4.jpg" class="img-fluid"
-                                                alt="client-img">
-                                        </div>
-                                        <div class="peopl align-self">
-                                            <h3>Mike Thyson</h3>
-                                            <p class="indentity">Seattle, Washington</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimonial-content">
-                                <div class="testimonial">
-                                    <blockquote>
-                                        <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae
-                                            laudantium
-                                            voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
-                                            Dolores molestias adipisci dolor sit amet! by the Desire to achieve Success.</q>
-                                    </blockquote>
-                                    <div class="testi-des">
-                                        <div class="test-img"><img src="assets/images/team2.jpg" class="img-fluid"
-                                                alt="client-img">
-                                        </div>
-                                        <div class="peopl align-self">
-                                            <h3>Laura gill</h3>
-                                            <p class="indentity">Seattle, Washington</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- //home page about section -->
-
-<!-- home page about section -->
-<section class="w3l-homeblock3" id="clients">
-    <div class="midd-w3 py-5">
-        <div class="container py-lg-5 py-md-3">
-            <div class="row">
-                <div class="col-lg-6">
-                    <span class="text">My Clients and Partners </span>
-                    <h3 class="title-big">Clients / Partners and
-                        <span> Collaborations.</span></h3>
-                    <p class="mt-4">Over the past ten years, I've been fortunate to work with and for people from some
-                        amazing organizations.</p>
-                    <div class="reward-list mt-5">
-                        <div class="reward-item">
-                            <div class="reward-item-photo">1k+
-                            </div>
-                            <div class="reward-item-detail">
-                                <span class="reward-item-title">Total CLients</span>
-                                <p class="reward-item-descr">over 18 countries</p>
-                            </div>
-                        </div>
-                        <div class="reward-item">
-                            <div class="reward-item-photo">95%
-                            </div>
-                            <div class="reward-item-detail">
-                                <span class="reward-item-title">Sensitive feedback</span>
-                                <p class="reward-item-descr">For Design quality</p>
-                            </div>
-                        </div>
-                        <div class="reward-item">
-                            <div class="reward-item-photo">150+
-                            </div>
-                            <div class="reward-item-detail">
-                                <span class="reward-item-title">Trusted sponsers</span>
-                                <p class="reward-item-descr">Featued by top rankers</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 align-self text-center mt-lg-0 mt-md-5 mt-4">
-                    <div class="images">
-                        <img src="assets/images/client1.png" class="img-fluid" alt="" />
-                        <img src="assets/images/client2.png" class="img-fluid" alt="" />
-                        <img src="assets/images/client3.png" class="img-fluid" alt="" />
-                        <img src="assets/images/client4.png" class="img-fluid" alt="" />
-                        <img src="assets/images/client5.png" class="img-fluid" alt="" />
-                        <img src="assets/images/client6.png" class="img-fluid" alt="" />
-                        <img src="assets/images/client2.png" class="img-fluid" alt="" />
-                        <img src="assets/images/client3.png" class="img-fluid" alt="" />
-                        <img src="assets/images/client4.png" class="img-fluid" alt="" />
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- //home page about section -->
-
-<!-- home page contact section -->
+<!-- 联系界面 -->
 <section class="w3l-contactblock" id="contact">
     <div class="midd-w3 py-5">
         <div class="container py-lg-4 py-md-3">
@@ -557,10 +354,10 @@
                     </p>
                     <ul class="address mt-md-5 mt-4">
                         <li class="mb-3">
-                            <p><span class="fa fa-phone"></span> <a href="tel:+404-11-22-89">+1-2345-345-678-11</a></p>
+                            <p><span class="icon-wechat"></span> <a href="tel:17337133590">yyh3117144922</a></p>
                         </li>
                         <li class="mb-4">
-                            <p><span class="fa fa-envelope-open"></span> <a href="mailto:design@portfolio.com">design@portfolio.com</a></p>
+                            <p><span class="fa fa-envelope-open"></span> <a href="mailto:3117144922@qq.com">3117144922@qq.com</a></p>
                         </li>
                         <li class="">
                             <p><span class="fa fa-map-marker"></span> #135 block, Barnard St. Brooklyn, <br>London 10036, UK.</p>
@@ -601,6 +398,8 @@
 <button onclick="topFunction()" id="movetop" title="Go to top">
   <span class="fa fa-angle-up"></span>
 </button>
+
+
 <script>
   // When the user scrolls down 20px from the top of the document, show the button
   window.onscroll = function () {

@@ -9927,7 +9927,7 @@ button.navbar-toggler.collapsed .icon-expand {
 
 .navbar .navbar-brand {
   margin: 0;
-  padding: 0;
+  padding: 5px;
   font-size: 32px;
   text-transform: capitalize;
   color: var(--heading-color); }
