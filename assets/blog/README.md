@@ -2,7 +2,7 @@
 
 ESP32视频小车
 
-![demo car](doc/demo_car.jpg)
+![demo car](https://cdn.jsdelivr.net/gh/yueyuanhaoo/BlogImage@main/demo_car.jpg)
 
 ## 硬件设计
 
@@ -39,27 +39,27 @@ TUP_Robot/
 
 ## 通信框架
 
-![demo car](doc/frame.png)
+![demo car](https://cdn.jsdelivr.net/gh/yueyuanhaoo/BlogImage@main/frame.png)
 
 ## 交互设计
 
 ### 欢迎界面
 
-![demo car](doc/welcome.png)
+![demo car](https://cdn.jsdelivr.net/gh/yueyuanhaoo/BlogImage@main/welcome.png)
 
 ### 主界面
 
-![demo car](doc/main.png)
+![demo car](https://cdn.jsdelivr.net/gh/yueyuanhaoo/BlogImage@main/main.png)
 
 视频链接画面
 
-![demo car](doc/main-2.png)
+![demo car](https://cdn.jsdelivr.net/gh/yueyuanhaoo/BlogImage@main/main-2.png)
 
 ### 设置界面
 
 按P键进入设置界面
 
-![demo car](doc/dialog.png)
+![demo car](https://cdn.jsdelivr.net/gh/yueyuanhaoo/BlogImage@main/dialog.png)
 
 ### 按键交互
 

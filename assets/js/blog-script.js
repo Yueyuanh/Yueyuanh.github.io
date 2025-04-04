@@ -1,20 +1,44 @@
-async function loadBlogPost(file) {
-    try {
-        const response = await fetch(file);
-        const markdown = await response.text();
+const articleListElement = document.getElementById('article-list');
+const articleContentElement = document.getElementById('article-content');
 
-        // 确保 marked.js 已加载
-        if (typeof marked !== 'function') {
-            console.error('Marked.js is not loaded or improperly configured.');
-            return;
-        }
+// 文章目录
+const articles = [
+    { title: '文章 1', path: 'assets/blog/README.md' },
+    { title: '文章 2', path: 'assets/blog/README.md' },
+];
 
-        const html = marked(markdown); // 转换 Markdown 为 HTML
-        document.getElementById('blog-container').innerHTML = html;
-    } catch (error) {
-        console.error('Error loading blog post:', error);
-    }
+// 渲染文章目录
+function renderArticleList() {
+    articles.forEach((article) => {
+        const li = document.createElement('li');
+        li.className = 'list-group-item';
+        const link = document.createElement('a');
+        link.textContent = article.title;
+        link.href = '#';
+        link.className = 'text-decoration-none';
+        link.addEventListener('click', () => loadArticle(article.path));
+        li.appendChild(link);
+        articleListElement.appendChild(li);
+    });
 }
 
-// 自动加载示例博客文章
-loadBlogPost('assets/blog/README.md');
+// 加载文章内容
+function loadArticle(path) {
+    fetch(path)
+        .then((response) => {
+            if (!response.ok) {
+                throw new Error('文章加载失败');
+            }
+            return response.text();
+        })
+        .then((markdown) => {
+            const html = marked.parse(markdown);
+            articleContentElement.innerHTML = html;
+        })
+        .catch((error) => {
+            articleContentElement.innerHTML = `<p class="text-danger">${error.message}</p>`;
+        });
+}
+
+// 初始化
+renderArticleList();
